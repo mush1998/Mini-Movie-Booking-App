@@ -14,22 +14,18 @@ append(movie);
 
 function append(data){
     let m= document.getElementById("movie");
-  // m=null;
+    let div=document.createElement("div");
+      let title = document.createElement("h2");
+      let img= document.createElement("img");
+
     data.map(function(el){
-       let div=document.createElement("div");
-
-        let title = document.createElement("h2");
         title.innerText=el.Title;
-    
-        let img= document.createElement("img");
         img.src= el.Poster;
-        
         div.append(title,img);
-        m.append(div);
-
+      
     })
   
-
+  m.append(div)
 }
 
 let bookbtn= document.getElementById("confirm");
