@@ -15,6 +15,9 @@
       display: block;
       margin: auto;
     }
+     #add-money>div{
+      margin-bottom:20px ;
+    }
     
   </style>
   <body>
@@ -25,13 +28,14 @@
     </div>
     <div id="add-money">
       <!-- input box for accepting money with id as "amount" -->
-      <input type="number" id="amount" class="block">
+      <div> <input type="number" id="amount" class="block"></div>
+     
       <!-- button with id as "add_to_wallet" -->
-      <button id="add_to_wallet"  class="block">Add to Wallet</button>
+      <div><button id="add_to_wallet" class="block">Add to Wallet</button></div>
+   
       <!-- button with id as "book_movies" to go to movies.html -->
-      <button id="book_movies"  class="block">
-       Book Movie
-      </button>
+      <div> <button id="book_movies" class="block"> Book Movie</button></div>
+     
     </div>
   </body>
 </html>
